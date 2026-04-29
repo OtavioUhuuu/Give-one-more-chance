@@ -1,3 +1,4 @@
+/* Configuração Geral do Corpo */
 body {
     background-color: #1D4221;
     color: white;
@@ -5,32 +6,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Garante que o fundo cubra a tela toda */
     margin: 0;
 }
 
+/* Estilização dos Botões */
 button {
     background-color: #64A712;
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
     margin: 10px;
-    transition: background 0.3s;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s;
 }
 
 button:hover {
     background-color: #4e820e;
+    transform: scale(1.05); /* Dá um leve aumento ao passar o mouse */
 }
 
+/* Lógica de exibição das cenas do jogo */
 .passo {
-    display: none;
+    display: none; /* Esconde todos os passos por padrão */
     text-align: center;
     max-width: 500px;
+    padding: 20px;
 }
 
 .passo.ativo {
-    display: block;
+    display: block; /* Mostra apenas o passo que tiver a classe 'ativo' */
+}
+
+/* Estilo para os parágrafos */
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
