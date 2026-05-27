@@ -11,31 +11,45 @@ body {
 
 main {
     text-align: center;
-    max-width: 90%; /* Limita o tamanho do bloco na tela */
+    max-width: 90%;
+    width: 600px; /* Define uma largura padrão confortável para leitura */
+    padding: 20px;
 }
 
 img {
-    max-width: 90%; /* Garante que a imagem não fique gigante e não quebre a tela */
-    border-radius: 10px; /* Deixa as bordas da imagem arredondadas e bonitas */
-    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
 button {
     background-color: #64A712;
     color: white;
     font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 8px;
     cursor: pointer;
     margin: 10px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #4e820e;
+    transform: scale(1.03);
 }
 
+/* Sistema de abas do jogo */
 .passo {
     display: none;
 }
